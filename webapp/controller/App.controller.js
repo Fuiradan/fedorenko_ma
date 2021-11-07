@@ -4,6 +4,9 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("fedorenko_ma.webapp.controller.App", {
+		onOpenDialog : function () {
+			this.getOwnerComponent().openHelloDialog();
+		}
 	});
 
 });
