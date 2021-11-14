@@ -2,7 +2,7 @@
 	controllerName="fedorenko_ma.webapp.controller.InvoiceList"
 	xmlns="sap.m"
 	xmlns:mvc="sap.ui.core.mvc">
-<List
+	<List
 		id="invoiceList"
 		class="sapUiResponsiveMargin"
 		width="auto"
@@ -20,18 +20,20 @@
 				<SearchField width="50%" search=".onFilterInvoices"/>
 			</Toolbar>
 		</headerToolbar>
-			<items>
+		<items>
 			<ObjectListItem
-					title="{invoice>Quantity} x {invoice>ProductName}x {invoice>ShipperName}"
-					number="{
+				title="{invoice>Quantity} x {invoice>ProductName}"
+				number="{
 					parts: [{path: 'invoice>ExtendedPrice'}, {path: 'view>/currency'}],
 					type: 'sap.ui.model.type.Currency',
 					formatOptions: {
 						showMeasure: false
 					}
 				}"
-					numberUnit="{view>/currency}"
-					numberState="{=	${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }">
+				numberUnit="{view>/currency}"
+				numberState="{=	${invoice>ExtendedPrice} > 50 ? 'Error' : 'Success' }"
+				type="Navigation"
+				press=".onPress">
 				<firstStatus>
 					<ObjectStatus text="{
 						path: 'invoice>Status',
