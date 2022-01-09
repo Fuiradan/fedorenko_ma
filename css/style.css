@@ -1,8 +1,13 @@
 .myAppDemoWT .myCustomButton.sapMBtn {
  	margin-right: 0.125rem
 }
-
+.myAppDemoWT .myCustomHeader {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 30px;
+}
 .myAppDemoWT .myCustomText {
 	display: inline-block;
 	font-weight: bold;
+	font-size: 1.15em;
 }

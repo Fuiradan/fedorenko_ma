@@ -1,0 +1,74 @@
+<mvc:View
+	controllerName="fedorenko_ma.lab10.controller.HelloPanel"
+	xmlns="sap.m"
+	xmlns:f="sap.f"
+	xmlns:mvc="sap.ui.core.mvc">
+	<Panel class="sapUiResponsiveMargin" width="auto">
+	<FlexBox>
+		<VBox>
+			<items>
+                <f:Avatar xmlns="sap.m" src="../static/avatar.jpg" displaySize="XL" displayShape="Ellipce" />
+            </items>
+		</VBox>
+		<VBox>
+			<FormattedText htmlText="Федоренко Максим Алексеевич" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+			<FormattedText htmlText="Мужчина, 22 года, родился 18 октября 1999" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+		</VBox>
+	</FlexBox>
+	</Panel>
+	<Panel class="sapUiResponsiveMargin" width="auto">
+	<FlexBox>
+            <VBox justifyContent="start" width="1000px">
+                <HBox>
+                    <FormattedText htmlText="Контакты:" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                    <FormattedText htmlText="email: my@mail.ru, тел: +79222222222" class="sapUiSmallMargin myCustomText" />
+                </HBox>
+                <FormattedText htmlText="г.Сургут, не готов к переезду, не готов к командировкам" class="sapUiSmallMargin myCustomText" />
+            </VBox>
+    </FlexBox>
+    </Panel>
+    <Panel headerText="{i18n>ProfPanelTitle}" class="sapUiResponsiveMargin" width="auto">
+        <FlexBox>
+            <VBox>
+                <HBox>
+                    <FormattedText htmlText="Специализация:" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                    <FormattedText htmlText=" программист, разработчик, тестировщик" class="sapUiSmallMargin myCustomText" />
+                </HBox>
+                <HBox>
+                    <FormattedText htmlText="Занятость:" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                    <FormattedText htmlText="полная занятость" class="sapUiSmallMargin myCustomText" />
+                </HBox>
+                <HBox>
+                    <FormattedText htmlText="График работы:" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                    <FormattedText htmlText="полный день, удалённая работа" class="sapUiSmallMargin myCustomText" />
+                </HBox>
+            </VBox>
+        </FlexBox>
+    </Panel>
+   <Panel headerText="{i18n>AboutMyselfTitle}" class="sapUiResponsiveMargin myCustomText" width="auto">
+        <FlexBox>
+            <VBox>
+                <HBox>
+                    <FormattedText htmlText="Осведомлен о методологиях проектирования и разработки ПО и основных принципах ООП." class="sapUiSmallMargin myCustomText" />
+                </HBox>
+                <HBox>
+                    <FormattedText htmlText="Имею опыт работы со следующими технологиями: Linux, Bash, Python 3, pytest, selenium, HTML5, CSS3, JavaScript, Django, Jinja2, SQL, Docker, Docker-Compose" class="sapUiSmallMargin myCustomText" />
+                </HBox>
+            </VBox>
+        </FlexBox>
+    </Panel>
+    <Panel headerText="{i18n>Education}" class="sapUiResponsiveMargin" width="auto">
+        <FlexBox>
+            <VBox>
+                <HBox>
+                    <FormattedText htmlText="Универститет:" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                    <FormattedText htmlText="Сургутский государственный университет, Сургут" class="sapUiSmallMargin  myCustomText" />
+                </HBox>
+                <HBox>
+                    <FormattedText htmlText="Направление:" class="sapUiSmallMargin sapThemeHighlight-asColor myCustomText" />
+                    <FormattedText htmlText="Информационные системы и технологии (Бакалавр)" class="sapUiSmallMargin  myCustomText" />
+                </HBox>
+            </VBox>
+        </FlexBox>
+    </Panel>
+</mvc:View>
